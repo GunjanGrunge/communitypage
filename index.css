@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Ubuntu+Mono:wght@400;700&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu Mono', monospace; */
+body{
+
+    background-color: black;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid beige;
+    padding: 8px;
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: bolder;
+    border-radius: 8px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    align-items: center;
+    width: auto;
+    height: 40px;
+    padding: 4px;
+}
+
+.navbar a:hover{
+    background-color: white;
+    color: #111;
+    font-weight: bold;
+}
+
+.navbar::after{
+    content: " ";
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: -1;
+    
+}
+
+.hero {
+    position: relative;
+    font-size: x-large;
+    display: flex;
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    z-index: -1;
+    height: 400px;
+    align-items: flex-start;
+    margin: 8px;
+    border: 2px solid blue;
+
+}
+
+    .hero::before{
+        content:" ";
+        background: url(./image/istockphoto-1376339349-2048x2048-transformed.jpeg) no-repeat center/cover;
+        position: absolute;
+        z-index: inherit;
+        height: 100%;
+        width: 100%;
+        inset: 0;
+        opacity: 0.8;
+    
+    }
+
+
+    .button-85 {
+      padding: 0.6em 2em;
+      border: none;
+      outline: none;
+      color: rgb(255, 255, 255);
+      background: #111;
+      cursor: pointer;
+      position: relative;
+      z-index: 0;
+      border-radius: 10px;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+    
+    .button-85:before {
+      content: "";
+      background: linear-gradient(
+        45deg,
+        #ff0000,
+        #ff7300,
+        #fffb00,
+        #48ff00,
+        #00ffd5,
+        #002bff,
+        #7a00ff,
+        #ff00c8,
+        #ff0000
+      );
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 400%;
+      z-index: -1;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      animation: glowing-button-85 20s linear infinite;
+      transition: opacity 0.3s ease-in-out;
+      border-radius: 10px;
+    }
+    
+    @keyframes glowing-button-85 {
+      0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+    }
+    
+    .button-85:after {
+      z-index: -1;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: black;
+      left: 0;
+      top: 0;
+      border-radius: 10px;
+    }
+
+    /* cards---------------------- */
+    .cards{
+        color: whitesmoke;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2px;
+        width: auto;
+        padding: 10px;
+    }
+
+    .cardbox{
+        text-align: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: larger;
+
+    }
